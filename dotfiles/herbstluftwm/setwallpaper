@@ -1,0 +1,7 @@
+#!/bin/bash
+
+wal -i $(find ~/.config/wallpapers/ | grep -v README.* | grep -v win-mac | grep -v light | shuf -n 1)
+feh --bg-fill $(cat ~/.cache/wal/wal)
+~/.config/herbstluftwm/theme.sh
+~/.config/herbstluftwm/panel.sh
+~/.config/herbstluftwm/panel.sh
