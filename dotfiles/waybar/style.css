@@ -1,0 +1,58 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FontAwesome, VictorMono Nerd Font, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+window#waybar {
+    background-color: rgba(43, 48, 59, 0.5);
+    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+.modules-right,
+#workspaces {
+    background-color: black;
+    opacity: 0.7;
+    border: 2px solid rgb(128, 128, 128);
+    border-radius: 10px;
+}
+.modules-left,
+.modules-right {
+    margin: 3px;
+}
+
+.modules-right * {
+    /* border: 2px solid red; */
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+/* .modules-right > * { */
+/*     border-right: 2px solid rgb(128, 128, 128); */
+/* } */
+
+#workspaces button {
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+#workspaces button.active {
+    background-color: rgb(128, 128, 128);
+    border: 2px solid black;
+    border-radius: 10px;
+
+    color: black;
+}
+
+#idle_inhibitor.activated {
+    opacity: 0.7;
+    background-color: rgb(128, 128, 128);
+    color: black;
+}

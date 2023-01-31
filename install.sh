@@ -1,7 +1,9 @@
 #!/bin/bash
 
-orig=("~/.config/herbstluftwm/"\
-  "~/.config/picom.conf"\
+orig=(\
+  "~/.config/waybar/"\
+  "~/.config/wallpapers/"\
+  "~/.config/hypr/"\
   "~/.config/kitty/"\
   "~/.config/nvim/"
 )
@@ -25,16 +27,15 @@ function install() {
 
   if [ "$a" = "y" ]; then
     echo "installing..."
-    mkdir -p "/home/max/config/"
+    mkdir -p "/home/max/.config/"
     for f in ${orig[@]}; do
       if [ "${f: -1}" == "/" ]; then
         f="${f::-1}"
       fi
       a="cp -r ./dotfiles/$(echo $f | sed "s/.*\///") $(echo $f | sed -E "s/(.*\/).*/\1/")"
-      a="$(echo $a | sed "s/\.config/config/g")"
       a=$(echo $a | sed "s/~/\/home\/$(whoami)/")
       echo $a
-      bash -c "$a"
+      # bash -c "$a"
     done
     echo -e "\nuse -f flag for installing fonts"
   else

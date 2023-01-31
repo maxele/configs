@@ -1,0 +1,15 @@
+[2023-01-24 10:48:33.857] [info] Using configuration file /home/max/.config/waybar/config
+[2023-01-24 10:48:33.857] [info] Using CSS file /home/max/.config/waybar/style.css
+[2023-01-24 10:48:33.862] [info] Hyprland IPC starting
+[2023-01-24 10:48:33.863] [warning] Waybar has been built without rfkill support.
+[2023-01-24 10:48:33.865] [warning] No battery named BAT2
+[2023-01-24 10:48:33.989] [warning] Requested height: 20 is less than the minimum height: 49 required by the modules
+[2023-01-24 10:48:33.989] [info] Bar configured (width: 2240, height: 49) for output: eDP-1
+[2023-01-24 10:48:38.890] [info] Using configuration file /home/max/.config/waybar/config
+[2023-01-24 10:48:38.890] [info] Using CSS file /home/max/.config/waybar/style.css
+[2023-01-24 10:48:38.895] [info] Hyprland IPC starting
+[2023-01-24 10:48:38.897] [warning] Waybar has been built without rfkill support.
+[2023-01-24 10:48:38.900] [warning] No battery named BAT2
+[2023-01-24 10:48:39.022] [warning] Requested height: 20 is less than the minimum height: 49 required by the modules
+[2023-01-24 10:48:39.022] [info] Bar configured (width: 2240, height: 49) for output: eDP-1
+Gdk-Message: 10:04:56.042: Error reading events from display: Broken pipe
